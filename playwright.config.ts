@@ -1,5 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
-import { URLS } from './utils/constants';
+import { URLS } from './src/utils/constants';
 
 export default defineConfig({
   testDir: './tests',
