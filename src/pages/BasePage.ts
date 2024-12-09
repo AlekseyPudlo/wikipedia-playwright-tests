@@ -1,6 +1,5 @@
 
-import { expect, Page } from '@playwright/test';
-import { URLS } from '../utils/constants';
+import { Page } from '@playwright/test';
 
 export abstract class BasePage {
     protected page: Page;

@@ -8,8 +8,7 @@ export class HomePage extends BasePage {
     
     constructor(page: any) {
         super(page);
-        this.languageSelector = this.page.getByRole('combobox', { name: 'Language' }) || 
-            this.page.locator('select#searchLanguage');
+        this.languageSelector = this.page.locator('select#searchLanguage');
         this.searchInput = this.page.locator('input[name="search"]');
         this.searchButton = this.page.locator('button[type="submit"]');
     }
@@ -19,7 +18,7 @@ export class HomePage extends BasePage {
     }
 
     async setLanguage(langCode: string): Promise<void> {
-        await this.languageSelector.selectOption({ label: langCode });
+        await this.languageSelector.selectOption(langCode);
     }
 
     async search(query: string): Promise<void> {
