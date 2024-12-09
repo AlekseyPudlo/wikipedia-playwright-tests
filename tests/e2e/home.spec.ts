@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { HomePage } from '../src/pages/HomePage';
+import { HomePage } from '../../src/pages/HomePage';
 import { TIME_UNITS } from 'src/utils/constants';
 
 let page;

@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
-import {HomePage} from '../src/pages/HomePage';
-import {SearchResultPage} from '../src/pages/SearchResultPage';
+import {HomePage} from '../../src/pages/HomePage';
+import {SearchResultPage} from '../../src/pages/SearchResultPage';
 
 test.describe('Wikipedia Search Page', () => {
     let homePage: HomePage;

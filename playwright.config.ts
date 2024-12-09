@@ -35,6 +35,10 @@ export default defineConfig({
       name: 'prod',
       use: { ...devices['Desktop Safari'] },
     },
+    {
+      name: 'api',
+      testDir: './tests/api',
+  },
   ],
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
