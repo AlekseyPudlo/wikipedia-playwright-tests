@@ -22,4 +22,15 @@ test.describe('API Test Example', () => {
         expect(posts).not.toBeNull();
         expect(posts.length).toBeGreaterThan(0);
     });
+
+    test('should be able to get the list of comments', async ({ request }) => {
+        const response = await request.get('https://jsonplaceholder.typicode.com/comments');
+        if (!response) {
+            throw new Error('Failed to fetch comments');
+        }
+        const comments = await response.json();
+
+        expect(comments).not.toBeNull();
+        expect(comments.length).toBeGreaterThan(0);
+    });
 });
